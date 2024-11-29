@@ -1,0 +1,263 @@
+.bakm-almas {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--maintenance);
+}
+
+.bakm-almas .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.bakm-almas .div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 58px 56px 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  box-shadow: var(--shadow);
+}
+
+.bakm-almas .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.bakm-almas .text-wrapper {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: var(--title-font-family);
+  font-weight: var(--title-font-weight);
+  color: var(--text);
+  font-size: var(--title-font-size);
+  text-align: center;
+  letter-spacing: var(--title-letter-spacing);
+  line-height: var(--title-line-height);
+  font-style: var(--title-font-style);
+}
+
+.bakm-almas .subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.bakm-almas .text-wrapper-2 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: var(--subtitle-font-family);
+  font-weight: var(--subtitle-font-weight);
+  color: var(--maintenance);
+  font-size: var(--subtitle-font-size);
+  text-align: center;
+  letter-spacing: var(--subtitle-letter-spacing);
+  line-height: var(--subtitle-line-height);
+  font-style: var(--subtitle-font-style);
+}
+
+.bakm-almas .div-2 {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--subtitle-2-font-family);
+  font-weight: var(--subtitle-2-font-weight);
+  color: var(--text);
+  font-size: var(--subtitle-2-font-size);
+  text-align: center;
+  letter-spacing: var(--subtitle-2-letter-spacing);
+  line-height: var(--subtitle-2-line-height);
+  font-style: var(--subtitle-2-font-style);
+}
+
+.bakm-almas .info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.bakm-almas .div-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.bakm-almas .text-wrapper-3 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: var(--subtitle-2-font-family);
+  font-weight: var(--subtitle-2-font-weight);
+  color: var(--text);
+  font-size: var(--subtitle-2-font-size);
+  text-align: center;
+  letter-spacing: var(--subtitle-2-letter-spacing);
+  line-height: var(--subtitle-2-line-height);
+  font-style: var(--subtitle-2-font-style);
+}
+
+.bakm-almas .text-wrapper-4 {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--date-time-font-family);
+  font-weight: var(--date-time-font-weight);
+  color: var(--text);
+  font-size: var(--date-time-font-size);
+  text-align: center;
+  letter-spacing: var(--date-time-letter-spacing);
+  line-height: var(--date-time-line-height);
+  font-style: var(--date-time-font-style);
+}
+
+.bakm-almas .image {
+  position: relative;
+  width: 360px;
+  height: 219px;
+}
+
+.bakm-almas .logo-kuit-tr {
+  position: absolute;
+  width: 120px;
+  height: 42px;
+  top: 0;
+  left: 8px;
+  object-fit: cover;
+}
+
+.bakm-almas .sub-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px 32px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  box-shadow: var(--shadow);
+}
+
+.bakm-almas .flexcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.bakm-almas .span {
+  font-family: var(--subtitle-2-font-family);
+  font-weight: var(--subtitle-2-font-weight);
+  color: #201f2b;
+  font-size: var(--subtitle-2-font-size);
+  letter-spacing: var(--subtitle-2-letter-spacing);
+  line-height: var(--subtitle-2-line-height);
+  font-style: var(--subtitle-2-font-style);
+}
+
+.bakm-almas .text-wrapper-5 {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--text-font-family);
+  font-weight: var(--text-font-weight);
+  color: var(--text);
+  font-size: var(--text-font-size);
+  text-align: center;
+  letter-spacing: var(--text-letter-spacing);
+  line-height: var(--text-line-height);
+  font-style: var(--text-font-style);
+}
+
+.bakm-almas .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: transparent;
+}
+
+.bakm-almas .p {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: var(--footer-font-family);
+  font-weight: var(--footer-font-weight);
+  color: var(--text);
+  font-size: var(--footer-font-size);
+  text-align: center;
+  letter-spacing: var(--footer-letter-spacing);
+  line-height: var(--footer-line-height);
+  font-style: var(--footer-font-style);
+}
+
+.bakm-almas .contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.bakm-almas .img {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.bakm-almas .text-wrapper-6 {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--footer-font-family);
+  font-weight: var(--footer-font-weight);
+  color: var(--text);
+  font-size: var(--footer-font-size);
+  text-align: center;
+  letter-spacing: var(--footer-letter-spacing);
+  line-height: var(--footer-line-height);
+  font-style: var(--footer-font-style);
+}

@@ -1,0 +1,273 @@
+.teknik-problem {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  height: 786px;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--teknik-problem);
+}
+
+.teknik-problem .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.teknik-problem .div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 58px 56px 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  box-shadow: var(--shadow);
+}
+
+.teknik-problem .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.teknik-problem .text-wrapper {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: var(--title-font-family);
+  font-weight: var(--title-font-weight);
+  color: var(--text);
+  font-size: var(--title-font-size);
+  text-align: center;
+  letter-spacing: var(--title-letter-spacing);
+  line-height: var(--title-line-height);
+  font-style: var(--title-font-style);
+}
+
+.teknik-problem .subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.teknik-problem .text-wrapper-2 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: var(--subtitle-font-family);
+  font-weight: var(--subtitle-font-weight);
+  color: var(--teknik-problem);
+  font-size: var(--subtitle-font-size);
+  text-align: center;
+  letter-spacing: var(--subtitle-letter-spacing);
+  line-height: var(--subtitle-line-height);
+  font-style: var(--subtitle-font-style);
+}
+
+.teknik-problem .p {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--subtitle-2-font-family);
+  font-weight: var(--subtitle-2-font-weight);
+  color: var(--text);
+  font-size: var(--subtitle-2-font-size);
+  text-align: center;
+  letter-spacing: var(--subtitle-2-letter-spacing);
+  line-height: var(--subtitle-2-line-height);
+  font-style: var(--subtitle-2-font-style);
+}
+
+.teknik-problem .image {
+  position: relative;
+  width: 290px;
+  height: 176px;
+  margin-left: -24.00px;
+  margin-right: -24.00px;
+}
+
+.teknik-problem .logo-kuit-tr {
+  position: absolute;
+  width: 120px;
+  height: 42px;
+  top: 0;
+  left: 8px;
+  object-fit: cover;
+}
+
+.teknik-problem .sub-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px 16px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  box-shadow: var(--shadow);
+}
+
+.teknik-problem .text-wrapper-3 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: var(--subtitle-2-font-family);
+  font-weight: var(--subtitle-2-font-weight);
+  color: var(--text);
+  font-size: var(--subtitle-2-font-size);
+  text-align: center;
+  letter-spacing: var(--subtitle-2-letter-spacing);
+  line-height: var(--subtitle-2-line-height);
+  font-style: var(--subtitle-2-font-style);
+}
+
+.teknik-problem .text-wrapper-4 {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--text-font-family);
+  font-weight: var(--text-font-weight);
+  color: var(--text);
+  font-size: var(--text-font-size);
+  text-align: center;
+  letter-spacing: var(--text-letter-spacing);
+  line-height: var(--text-line-height);
+  font-style: var(--text-font-style);
+}
+
+.teknik-problem .group {
+  position: relative;
+  width: 354.5px;
+  height: 114px;
+  margin-right: -1.25px;
+}
+
+.teknik-problem .text-wrapper-5 {
+  position: absolute;
+  width: 327px;
+  top: 0;
+  left: 7px;
+  font-family: var(--footer-font-family);
+  font-weight: var(--footer-font-weight);
+  color: var(--text);
+  font-size: var(--footer-font-size);
+  text-align: center;
+  letter-spacing: var(--footer-letter-spacing);
+  line-height: var(--footer-line-height);
+  font-style: var(--footer-font-style);
+}
+
+.teknik-problem .group-2 {
+  position: absolute;
+  width: 109px;
+  height: 34px;
+  top: 30px;
+  left: 0;
+}
+
+.teknik-problem .img {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 46px;
+}
+
+.teknik-problem .text-wrapper-6 {
+  position: absolute;
+  width: 107px;
+  top: 20px;
+  left: 0;
+  font-family: var(--footer-font-family);
+  font-weight: var(--footer-font-weight);
+  color: var(--text);
+  font-size: var(--footer-font-size);
+  text-align: center;
+  letter-spacing: var(--footer-letter-spacing);
+  line-height: var(--footer-line-height);
+  font-style: var(--footer-font-style);
+}
+
+.teknik-problem .overlap-group {
+  position: absolute;
+  width: 109px;
+  height: 34px;
+  top: 30px;
+  left: 123px;
+}
+
+.teknik-problem .group-3 {
+  position: absolute;
+  width: 109px;
+  height: 34px;
+  top: 0;
+  left: 0;
+}
+
+.teknik-problem .group-4 {
+  position: absolute;
+  width: 108px;
+  height: 34px;
+  top: 30px;
+  left: 246px;
+}
+
+.teknik-problem .web {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 45px;
+}
+
+.teknik-problem .text-wrapper-7 {
+  width: 106px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  font-family: var(--footer-font-family);
+  font-weight: var(--footer-font-weight);
+  color: var(--text);
+  font-size: var(--footer-font-size);
+  text-align: center;
+  letter-spacing: var(--footer-letter-spacing);
+  line-height: var(--footer-line-height);
+  font-style: var(--footer-font-style);
+}
+
+.teknik-problem .group-5 {
+  position: absolute;
+  width: 109px;
+  height: 34px;
+  top: 80px;
+  left: 0;
+}
+
+.teknik-problem .group-6 {
+  position: absolute;
+  width: 109px;
+  height: 34px;
+  top: 80px;
+  left: 123px;
+}

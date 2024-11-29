@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KU Bakım Çalışması</title>
+    <style>
+        :root {
+            --color-dark-green: #3E6101;
+            --color-maintenance: #EE7323;
+            --color-text: #201F2B;
+            --color-white: #FFFFFF;
+            --color-shadow: rgba(138, 148, 153, 0.3);
+            
+            --font-primary: 'Helvetica', Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: #f4f4f4;
+        }
+
+        .maintenance-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .maintenance-card {
+            background-color: var(--color-white);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px var(--color-shadow);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .maintenance-logo {
+            display: block;
+            max-width: 150px;
+            max-height: 70px;
+            margin: 10px auto 0;
+        }
+
+        .maintenance-header {
+            background-color: var(--color-maintenance);
+            color: var(--color-white);
+            text-align: center;
+            padding: 10px 20px 20px;
+        }
+
+        .maintenance-header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .maintenance-header h2 {
+            font-size: 18px;
+        }
+
+        .maintenance-details {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .maintenance-details-item {
+            flex: 1;
+        }
+
+        .maintenance-image {
+            width: 350px;
+            height: auto;
+            display: block;
+            margin: 40px auto;
+        }
+
+        .maintenance-info {
+            background-color: var(--color-white);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .maintenance-contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .maintenance-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-basis: calc(50% - 10px);
+        }
+
+        .maintenance-contact-icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        @media (max-width: 480px) {
+            .maintenance-details,
+            .maintenance-contact {
+                flex-direction: column;
+            }
+
+            .maintenance-contact-item {
+                flex-basis: 100%;
+            }
+
+            .maintenance-image {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-container">
+        <div class="maintenance-card">
+            <img class="maintenance-logo" src="https://cdn.ku.edu.tr/cdn/files/mailing/KU/icon/KU-logo.png" alt="KU Logo">
+            
+            <div class="maintenance-header">
+                <h1>Bakım Çalışması</h1>
+                <h2>KUHub - Sistem İyileştirmeleri</h2>
+            </div>
+            
+            <div class="maintenance-details">
+                <div class="maintenance-details-item">
+                    <strong>Tarih</strong>
+                    <div>21.11.2024</div>
+                </div>
+                <div class="maintenance-details-item">
+                    <strong>Saat</strong>
+                    <div>15:00 - 17:00</div>
+                </div>
+            </div>
+
+            <img class="maintenance-image" src="https://cdn.ku.edu.tr/cdn/files/mailing/KU/images/bakim-calismasi.png" alt="Bakım Çalışması">
+
+            <div class="maintenance-info">
+                <p>Size daha iyi hizmet verebilmek amacıyla güncelleme çalışmaları yapılmaktadır. Hizmetimiz kısa bir süre içinde erişime açılacaktır.</p>
+                <p>Anlayışınız için teşekkürler.</p>
+            </div>
+        </div>
+
+        <div class="maintenance-contact">
+            <div class="maintenance-contact-item">
+                <img class="maintenance-contact-icon" src="https://cdn.ku.edu.tr/cdn/files/mailing/KU/icon/request-icon.png" alt="Request Icon">
+                <span>trackit.ku.edu.tr</span>
+            </div>
+            <div class="maintenance-contact-item">
+                <img class="maintenance-contact-icon" src="https://cdn.ku.edu.tr/cdn/files/mailing/KU/icon/mail-icon.png" alt="Mail Icon">
+                <span>it@ku.edu.tr</span>
+            </div>
+            <div class="maintenance-contact-item">
+                <img class="maintenance-contact-icon" src="https://cdn.ku.edu.tr/cdn/files/mailing/KU/icon/web-icon.png" alt="Web Icon">
+                <span>it.ku.edu.tr</span>
+            </div>
+            <div class="maintenance-contact-item">
+                <img class="maintenance-contact-icon" src="https://cdn.ku.edu.tr/cdn/files/mailing/KU/icon/phone-icon.png" alt="Phone Icon">
+                <span>+90 212 338 1111</span>
+            </div>
+            <div class="maintenance-contact-item">
+                <img class="maintenance-contact-icon" src="https://cdn.ku.edu.tr/cdn/files/mailing/KU/icon/location-icon.png" alt="Location Icon">
+                <span>SOS / Grotto Tüneli</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
