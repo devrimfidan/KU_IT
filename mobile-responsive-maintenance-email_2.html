@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}:root {
+  --dark-green: rgba(62, 97, 1, 1);
+  --maintenance: rgba(238, 115, 35, 1);
+  --problem-zld: rgba(125, 196, 0, 1);
+  --teknik-problem: rgba(250, 45, 72, 1);
+  --bilgilendirme: rgba(0, 163, 255, 1);
+  --gncelleme: rgba(255, 162, 0, 1);
+  --text: rgba(32, 31, 43, 1);
+  --white: rgba(255, 255, 255, 1);
+  --title-font-family: "Helvetica", Helvetica;
+  --title-font-weight: 700;
+  --title-font-size: 28px;
+  --title-letter-spacing: 0px;
+  --title-line-height: normal;
+  --title-font-style: normal;
+  --subtitle-font-family: "Helvetica", Helvetica;
+  --subtitle-font-weight: 700;
+  --subtitle-font-size: 24px;
+  --subtitle-letter-spacing: 0px;
+  --subtitle-line-height: normal;
+  --subtitle-font-style: normal;
+  --subtitle-2-font-family: "Helvetica", Helvetica;
+  --subtitle-2-font-weight: 400;
+  --subtitle-2-font-size: 16px;
+  --subtitle-2-letter-spacing: 0px;
+  --subtitle-2-line-height: 114.28571939468384%;
+  --subtitle-2-font-style: normal;
+  --date-time-font-family: "Helvetica", Helvetica;
+  --date-time-font-weight: 400;
+  --date-time-font-size: 24px;
+  --date-time-letter-spacing: 0px;
+  --date-time-line-height: normal;
+  --date-time-font-style: normal;
+  --text-font-family: "Helvetica", Helvetica;
+  --text-font-weight: 700;
+  --text-font-size: 12px;
+  --text-letter-spacing: 0px;
+  --text-line-height: 114.28571939468384%;
+  --text-font-style: normal;
+  --footer-font-family: "Helvetica", Helvetica;
+  --footer-font-weight: 400;
+  --footer-font-size: 12px;
+  --footer-letter-spacing: 0px;
+  --footer-line-height: 114.28571939468384%;
+  --footer-font-style: normal;
+  --shadow: 0px 0px 5px 0px rgba(138, 148, 153, 1);
+}
+.bakm-almas {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--maintenance);
+}
+
+.bakm-almas .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.bakm-almas .div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 58px 56px 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  box-shadow: var(--shadow);
+}
+
+.bakm-almas .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.bakm-almas .text-wrapper {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: var(--title-font-family);
+  font-weight: var(--title-font-weight);
+  color: var(--text);
+  font-size: var(--title-font-size);
+  text-align: center;
+  letter-spacing: var(--title-letter-spacing);
+  line-height: var(--title-line-height);
+  font-style: var(--title-font-style);
+}
+
+.bakm-almas .subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.bakm-almas .text-wrapper-2 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: var(--subtitle-font-family);
+  font-weight: var(--subtitle-font-weight);
+  color: var(--maintenance);
+  font-size: var(--subtitle-font-size);
+  text-align: center;
+  letter-spacing: var(--subtitle-letter-spacing);
+  line-height: var(--subtitle-line-height);
+  font-style: var(--subtitle-font-style);
+}
+
+.bakm-almas .div-2 {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--subtitle-2-font-family);
+  font-weight: var(--subtitle-2-font-weight);
+  color: var(--text);
+  font-size: var(--subtitle-2-font-size);
+  text-align: center;
+  letter-spacing: var(--subtitle-2-letter-spacing);
+  line-height: var(--subtitle-2-line-height);
+  font-style: var(--subtitle-2-font-style);
+}
+
+.bakm-almas .info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.bakm-almas .div-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.bakm-almas .text-wrapper-3 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: var(--subtitle-2-font-family);
+  font-weight: var(--subtitle-2-font-weight);
+  color: var(--text);
+  font-size: var(--subtitle-2-font-size);
+  text-align: center;
+  letter-spacing: var(--subtitle-2-letter-spacing);
+  line-height: var(--subtitle-2-line-height);
+  font-style: var(--subtitle-2-font-style);
+}
+
+.bakm-almas .text-wrapper-4 {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--date-time-font-family);
+  font-weight: var(--date-time-font-weight);
+  color: var(--text);
+  font-size: var(--date-time-font-size);
+  text-align: center;
+  letter-spacing: var(--date-time-letter-spacing);
+  line-height: var(--date-time-line-height);
+  font-style: var(--date-time-font-style);
+}
+
+.bakm-almas .image {
+  position: relative;
+  width: 360px;
+  height: 219px;
+}
+
+.bakm-almas .logo-kuit-tr {
+  position: absolute;
+  width: 120px;
+  height: 42px;
+  top: 0;
+  left: 8px;
+  object-fit: cover;
+}
+
+.bakm-almas .sub-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px 32px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  box-shadow: var(--shadow);
+}
+
+.bakm-almas .flexcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.bakm-almas .span {
+  font-family: var(--subtitle-2-font-family);
+  font-weight: var(--subtitle-2-font-weight);
+  color: #201f2b;
+  font-size: var(--subtitle-2-font-size);
+  letter-spacing: var(--subtitle-2-letter-spacing);
+  line-height: var(--subtitle-2-line-height);
+  font-style: var(--subtitle-2-font-style);
+}
+
+.bakm-almas .text-wrapper-5 {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--text-font-family);
+  font-weight: var(--text-font-weight);
+  color: var(--text);
+  font-size: var(--text-font-size);
+  text-align: center;
+  letter-spacing: var(--text-letter-spacing);
+  line-height: var(--text-line-height);
+  font-style: var(--text-font-style);
+}
+
+.bakm-almas .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: transparent;
+}
+
+.bakm-almas .p {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: var(--footer-font-family);
+  font-weight: var(--footer-font-weight);
+  color: var(--text);
+  font-size: var(--footer-font-size);
+  text-align: center;
+  letter-spacing: var(--footer-letter-spacing);
+  line-height: var(--footer-line-height);
+  font-style: var(--footer-font-style);
+}
+
+.bakm-almas .contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.bakm-almas .img {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.bakm-almas .text-wrapper-6 {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--footer-font-family);
+  font-weight: var(--footer-font-weight);
+  color: var(--text);
+  font-size: var(--footer-font-size);
+  text-align: center;
+  letter-spacing: var(--footer-letter-spacing);
+  line-height: var(--footer-line-height);
+  font-style: var(--footer-font-style);
+}
+   
+   </style>
+  </head>
+  <body>
+    <div class="bakm-almas">
+      <div class="content">
+        <div class="div">
+          <div class="title">
+            <div class="text-wrapper">Bakım Çalışması</div>
+            <div class="subtitle">
+              <div class="text-wrapper-2">KUHub</div>
+              <div class="div-2">Sistem İyileştirmeleri</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="div-3">
+              <div class="text-wrapper-3">Tarih</div>
+              <div class="text-wrapper-4">21.11.2024</div>
+            </div>
+            <div class="div-3">
+              <div class="text-wrapper-3">Saat</div>
+              <div class="text-wrapper-4">15:00 - 17:00</div>
+            </div>
+          </div>
+          <img class="image" src="https://cdn.ku.edu.tr/cdn/files/mailing/KU/images/bakim-calismasi.png" />
+          <img class="logo-kuit-tr" src="https://cdn.ku.edu.tr/cdn/files/mailing/KU/icon/KU-logo.png" />
+        </div>
+        <div class="sub-info">
+          <div class="flexcontainer">
+            <p class="div-2">
+              <span class="span">Size daha iyi hizmet verebilmek amacıyla güncelleme çalışmalarıyapılmaktadır. Hizmetimiz kısa bir süre içinde erişime açılacaktır.</span>
+            </p>
+          </div>
+          <div class="text-wrapper-5">Anlayışınız için teşekkürler.</div>
+        </div>
+      </div>
+      <footer class="footer">
+        <p class="p">Yardıma mı ihtiyacınız var? Bizimle iletişime geçin.</p>
+        <div class="contact">
+          <div class="div-3">
+            <img class="img" src="https://cdn.ku.edu.tr/cdn/files/mailing/KU/icon/request-icon.png" />
+            <div class="text-wrapper-6">trackit.ku.edu.tr</div>
+          </div>
+          <div class="div-3">
+            <img class="img" src="https://cdn.ku.edu.tr/cdn/files/mailing/KU/icon/mail-icon.png" />
+            <div class="text-wrapper-6">it@ku.edu.tr</div>
+          </div>
+          <div class="div-3">
+            <img class="img" src="https://cdn.ku.edu.tr/cdn/files/mailing/KU/icon/web-icon.png" />
+            <div class="text-wrapper-6">it.ku.edu.tr</div>
+          </div>
+          <div class="div-3">
+            <img class="img" src="https://cdn.ku.edu.tr/cdn/files/mailing/KU/icon/phone-icon.png" />
+           <div class="text-wrapper-6">+90 212 338 1111</div>
+          </div>
+          <div class="div-3">
+            <img class="img" src="https://cdn.ku.edu.tr/cdn/files/mailing/KU/icon/location-icon.png" />
+            <div class="text-wrapper-6">SOS / Grotto Tüneli</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
